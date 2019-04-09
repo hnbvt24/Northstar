@@ -82,11 +82,11 @@ ul {
   grid-template-rows: 1fr 5fr 5fr 5fr 1fr;
   grid-template-columns: auto;
   grid-template-areas: 
-    "header header header"
+    "header"
     "top-section"
-    "main-section"
+    "main-section"  
     "promo-section"
-    "footer footer footer";
+    "footer";
   grid-gap: .75em;
 }
 
@@ -145,10 +145,11 @@ nav li {
     grid-template-rows: 1fr 1fr 5fr 1fr;
     grid-template-columns: 2fr 5fr 3fr;
     grid-template-areas: 
-    "header header header"
-    "nav nav nav"
-    "main main aside"    
-    "footer footer footer";
+    "header"
+    "top-section"
+    "main-section"  
+    "promo-section"
+    "footer";
  }
 
 @media(max-width: 480px){
