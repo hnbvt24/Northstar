@@ -91,7 +91,6 @@ ul {
 }
 
 header {
-  margin: 0 100px;
   grid-area: header;
   /*grid-template-columns: 1fr auto;*/
   background-color: teal;
