@@ -94,6 +94,12 @@ header {
   grid-area: header;
   /*grid-template-columns: 1fr auto;*/
   background-color: teal;
+  grid-template-columns: 1fr 3fr;
+}
+
+.logo {
+  grid-area: logo;
+  background-color: #ff6600;
 }
 
 nav {
