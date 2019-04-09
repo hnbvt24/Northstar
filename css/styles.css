@@ -132,3 +132,18 @@ nav li {
 .navItemLast {
   grid-auto-flow: -1;
 }*/
+
+// For tablet viewers 
+ @media(max-width: 768px){
+    grid-template-rows: 1fr 1fr 5fr 1fr;
+    grid-template-columns: 2fr 5fr 3fr;
+    grid-template-areas: 
+    "header header header"
+    "nav nav nav"
+    "main main aside"    
+    "footer footer footer";
+ }
+
+@media(max-width: 480px){
+    display: block;
+}
