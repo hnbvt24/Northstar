@@ -70,15 +70,37 @@ a,
 	font-family: 'Open Sans', sans-serif;
 }
 
+/* display grid elements */
+.container,
+header,
+header div,
+ul {
+	display: grid;
+}
+
 .container {
-	display: grid;
-	grid-template-rows: 1fr 2fr 1fr auto;
+ 
 }
 
-.nav {
-	display: grid;
+header {
+  margin: 0 100px;
+  grid-template-columns: 1fr auto;
 }
 
-.navItem {
+header div {
+  align-content: center;
+}
 
+ul {
+	grid-template-columns: repeat(7, auto);
+  grid-gap: 32px;
+  list-style-type: none;
+}
+
+nav li {
+  text-align: center;
+}
+
+.navItemLast {
+  grid-auto-flow: -1;
 }
