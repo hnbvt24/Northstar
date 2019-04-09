@@ -130,10 +130,10 @@ footer {
   background-color: lightgreen;
 }
 
-/*header div {
+header div {
   align-content: center;
-}*/
-/*
+}
+
 ul {
   grid-template-columns: repeat(7, auto);
   grid-gap: 32px;
@@ -144,7 +144,7 @@ nav li {
   text-align: center;
 }
 
-.navItemLast {
+/*.navItemLast {
   grid-auto-flow: -1;
 }*/
 
