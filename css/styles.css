@@ -74,7 +74,8 @@ a,
 .container,
 header,
 header div,
-ul {
+ul,
+footer {
 	display: grid;
 }
 
@@ -127,6 +128,20 @@ nav {
 footer {
   grid-area: footer;
   background-color: lightgreen;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+     "footer-logo bottom-nav";
+  grid-gap: .25em;
+}
+
+.footer {
+  grid-area: footer-logo;
+  background-color: #ff0000;
+}
+
+.bottom-nav {
+  grid-area: bottom-nav;
+  background-color: #660000;
 }
 
 header div {
