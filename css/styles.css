@@ -79,13 +79,13 @@ ul {
 }
 
 .container {
-  grid-template-rows: 1fr 5fr 5fr 5fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr 4fr 1fr;
   grid-template-columns: auto;
   grid-template-areas: 
     "header"
-    "top-section"
-    "main-section"  
-    "promo-section"
+    "top"
+    "main"  
+    "promo"
     "footer";
   grid-gap: .75em;
 }
@@ -102,18 +102,18 @@ nav {
   background-color: tomato;
 }
 
-.topSection{
-  grid-area: top-section;
+.top {
+  grid-area: top;
   background-color: lightblue;
 }
 
-.mainSection {
-  grid-area: main-section;
+.main {
+  grid-area: main;
   background-color: orange;
 }
 
-.promoSection {
-  grid-area: promo-section;
+.promo {
+  grid-area: promo;
   background-color: yellow;
 }
 
@@ -142,14 +142,7 @@ nav li {
 
 // For tablet viewers 
  @media(max-width: 768px){
-    grid-template-rows: 1fr 1fr 5fr 1fr;
-    grid-template-columns: 2fr 5fr 3fr;
-    grid-template-areas: 
-    "header"
-    "top-section"
-    "main-section"  
-    "promo-section"
-    "footer";
+  /*nothing new here*/
  }
 
 @media(max-width: 480px){
