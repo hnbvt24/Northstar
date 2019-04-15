@@ -19,6 +19,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --blue:#1B80C6;
   --orange: #E87D00;
   --grey:#A3A3A3;
+  --navy:#082539;
   --white:#FBFBFB;
 }
 
@@ -32,7 +33,6 @@ html {
 }
 
 /*
-  WAT IS THIS?!
   We inherit box-sizing: border-box; from our <html> selector
   Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
 */
@@ -40,22 +40,6 @@ html {
 *:before,
 *:after {
   box-sizing: inherit;
-}
-
-body {
-  /*background-image: url("./images/topography.svg"),
-    linear-gradient(110deg, #f93d66, #6d47d9);
-  background-size: 340px, auto;*/
-  background: var(--white);
-  min-height: calc(100vh - 100px);
-  /*margin: 50px;*/
-  /*letter-spacing: -1px;*/
-}
-
-h2,
-h6,
-.dateDay {
-  margin: 0 0 5px 0;
 }
 
 h1,
@@ -66,112 +50,154 @@ span,
 button,
 a,
 .dateMonth {
-	margin: 0 0 5px 0;
-	font-family: 'Open Sans', sans-serif;
+  margin: 0 0 5px 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
-/* display grid elements */
-.container,
-.header,
-.header div,
-ul,
-.footer {
-	display: grid;
+body {
+  background: var(--white);
+  min-height: calc(100vh - 100px);
+  margin: 0;
 }
 
 .container {
-  grid-template-rows: 1fr 550px; 4fr 4fr 1fr;
-  grid-template-columns: auto;
+  display: grid;
+  grid-template-columns: 1fr;
   grid-template-areas: 
-    "header"
-    "top"
-    "main"  
-    "promo"
-    "footer";
+  "header";
 }
+
+/* -------  GRID AREAS  ------- */
 
 .header {
   grid-area: header;
-  /*grid-template-columns: 1fr auto;*/
-  background-color: teal;
-  grid-template-columns: 1fr auto;
-  grid-template-areas:
-     "logo nav";
-  grid-gap: .25em;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  grid-template-areas: 
+  "logo nav nav";
+  align-items: center;
 }
 
 .logo {
   grid-area: logo;
-  background-color: #ff6600;
 }
 
-nav {
+.logo a {
+  color: var(--darkBlue);
+  text-decoration: none;
+}
+
+.hamburger {
+  display: grid;
+  grid-area: menu-icon;
+  justify-content: flex-end;
+}
+
+.nav {
   grid-area: nav;
-  background-color: tomato;
+  display: flex;
+  justify-content: flex-end;
 }
 
-.top {
-  grid-area: top;
-  background-color: lightblue;
+/* -------  NAVIGATION  ------- */
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
 }
 
-.main {
-  grid-area: main;
-  background-color: orange;
-}
-
-.promo {
-  grid-area: promo;
-  background-color: yellow;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: lightgreen;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-areas:
-     "footer-logo bottom-nav social";
-  grid-gap: .25em;
-}
-
-.footer-logo {
-  grid-area: footer-logo;
-  background-color: #ff0000;
-}
-
-.bottom-nav {
-  grid-area: bottom-nav;
-  background-color: #660000;
-}
-
-.social {
-  grid-area: social;
-  background-color: #0000ff;
-}
-
-.header div {
-  align-content: center;
-}
-
-ul {
-  grid-template-columns: repeat(7, auto);
-  grid-gap: 32px;
+.main-nav li {
   list-style-type: none;
-}
-
-nav li {
   text-align: center;
+  display: grid;
 }
 
-/*.navItemLast {
-  grid-auto-flow: -1;
-}*/
+.main-nav a {
+  color: var(--darkBlue);
+  margin: 0px 2px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 10px;
+}
 
-// For tablet viewers 
- @media(max-width: 768px){
-  /*nothing new here*/
- }
+.logo a:hover,.main-nav a:hover {
+  color: var(--orange);
+  transition: 0.2s ease;
+}
 
-@media(max-width: 480px){
+.hamburger {
+  display: none;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + #navigation {
+    display: flex;
+}
+
+/* ------- Media Queries ------- */
+
+@media(max-width: 800px){
+
+  .header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "logo menu-icon";
+  }
+
+  .hamburger {
+    display: flex;
+    justify-content: flex-end;
+    z-index: 101;
+  }
+
+  .nav {
     display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+  
+  .main-nav.is-open{
+    background-color: var(--navy);
+    display:block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 5em 0;
+    z-index: 100;
+    zoom: 1;
+    filter: alpha(opacity=95);
+    opacity: 0.95;
+  }
+
+  .main-nav li {
+    display: block;
+    padding: 12px 6px;
+  }
+
+  .main-nav li a {
+    color: var(--white);
+  }
+
+  .main-nav li:hover, .main-nav li:hover > a {
+    background-color: var(--white);
+    color: var(--orange);
+
+  }
+
+  #menu-toggle:checked + .main-nav {
+    display: block;
+  }
+
 }
