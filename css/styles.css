@@ -60,11 +60,26 @@ body {
   margin: 0;
 }
 
-.container {
+.header-container {
   display: grid;
+  background-image: url("../images/visit.jpg");
+  background-color: (--grey);
   grid-template-columns: 1fr;
   grid-template-areas: 
   "header";
+  height: calc(100vh - 15vh);
+  align-items: flex-start;
+}
+
+.services-container {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  display:grid;
+  height: 15vh;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "services";
+  align-content: center;
 }
 
 /* -------  GRID AREAS  ------- */
@@ -74,17 +89,14 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   grid-template-areas: 
-  "logo nav nav";
+  "logo nav nav"
+  "cta cta cta";
   align-items: center;
+  margin: 0 5em;
 }
 
 .logo {
   grid-area: logo;
-}
-
-.logo a {
-  color: var(--darkBlue);
-  text-decoration: none;
 }
 
 .hamburger {
@@ -99,6 +111,37 @@ body {
   justify-content: flex-end;
 }
 
+.callToAction {
+  grid-area: cta;
+  padding: 100px 0;
+}
+
+.serviceTimes {
+  grid-area: services;
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-areas: 
+  "hours excerpt btnB";
+  margin: 0 5em;
+  align-items: center;
+  justify-content: center;
+}
+
+.serviceHours {
+  grid-area: hours;
+  font-size: 2.4em;
+}
+
+.serviceExcerpt {
+  grid-area: excerpt;
+}
+
+.btn-6b-inverse {
+  grid-area: btnB;
+  min-width: 180px;
+  max-width: 220px;
+}
+
 /* -------  NAVIGATION  ------- */
 
 .main-nav {
@@ -108,6 +151,15 @@ body {
   padding: 0;
 }
 
+.logo, .nav {
+  padding: 2em 0;
+}
+
+.logo a {
+  color: var(--white);
+  text-decoration: none;
+}
+
 .main-nav li {
   list-style-type: none;
   text-align: center;
@@ -115,11 +167,11 @@ body {
 }
 
 .main-nav a {
-  color: var(--darkBlue);
+  color: var(--white);
   margin: 0px 2px;
   text-decoration: none;
   display: inline-block;
-  padding: 0 10px;
+  padding: 0 16px;
 }
 
 .logo a:hover,.main-nav a:hover {
@@ -139,16 +191,77 @@ body {
     display: flex;
 }
 
+/* ------- Bottom Header ------- */
+
+/* button style from https://codepen.io/archivum/pen/NPPOaj */
+.btn-6 {
+  color: var(--white);
+  background: var(--orange);
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+  height: 40px;
+  min-width: 140px;
+  line-height: 24px;
+  font-size: 14px;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.btn-6:active {
+  top: 2px;
+}
+
+/* Button 6a */
+.btn-6a {
+  border: 4px solid var(--orange);
+}
+
+.btn-6a:hover {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--orange);
+}
+
+/* Button 6b */
+.btn-6b {
+  border: 4px solid var(--orange);
+  border-radius: 6px;
+}
+
+.btn-6b:hover {
+  background: transparent;
+  border-color: var(--white);
+  color: var(--orange);
+}
+
+/* Button 6b inverted color */
+.btn-6b-inverse {
+  border: 4px solid var(--white);
+  background-color: var(--white);
+  border-radius: 6px;
+  color: var(--orange);
+}
+
+.btn-6b-inverse:hover {
+  background: transparent;
+  border-color: var(--orange);
+  color: var(--white);
+}
+
 /* ------- Media Queries ------- */
 
-@media(max-width: 800px){
+@media(max-width: 996px){
 
   .header {
     grid-area: header;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
-    "logo menu-icon";
+    "logo menu-icon"
+    "cta cta";
   }
 
   .hamburger {
