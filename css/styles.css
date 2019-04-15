@@ -56,6 +56,7 @@ a,
 
 body {
   background: var(--white);
+  color: var(--darkBlue);
   min-height: calc(100vh - 100px);
   margin: 0;
 }
@@ -79,7 +80,26 @@ body {
   grid-template-columns: 1fr;
   grid-template-areas: 
   "services";
-  align-content: center;
+}
+
+.upcoming-container {
+  background-color: var(--white);
+  display: grid;
+  height: 45em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+  "events news"
+  "events blog";
+
+}
+
+.italic-header {
+  font-style: italic;
+}
+
+span {
+  font-style: normal;
 }
 
 /* -------  GRID AREAS  ------- */
@@ -114,32 +134,125 @@ body {
 .callToAction {
   grid-area: cta;
   padding: 100px 0;
+  color: var(--white);
 }
 
 .serviceTimes {
   grid-area: services;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr;
-  grid-template-areas: 
-  "hours excerpt btnB";
-  margin: 0 5em;
-  align-items: center;
+  display: flex;
+  margin: 0 2em;
+  padding-top: 5px;
   justify-content: center;
+  align-content: center;
+}
+
+.serviceTimes > * {
+  padding: 0 12px;
+  align-self: baseline;
+  font-family: 'Open Sans', serif;
 }
 
 .serviceHours {
   grid-area: hours;
-  font-size: 2.4em;
+  font-size: 1.5em;
+  padding: 0 10px 0 0;
+  font-weight: 700;
 }
 
 .serviceExcerpt {
   grid-area: excerpt;
+  font-size: 1.5em;
+  padding-right: 1.85em;
+  font-weight: 400;
 }
 
 .btn-6b-inverse {
   grid-area: btnB;
+  align-self: center;
   min-width: 180px;
   max-width: 220px;
+}
+
+.upcoming-events {
+  grid-area: events;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+  "upcoming-header"
+  "upcoming-event";
+}
+
+.latest-announcements {
+  grid-area: news;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+  "upcoming-header";
+}
+
+.latest-blog {
+  grid-area: blog;
+}
+
+.upcoming-header {
+  grid-area: upcoming-header;
+}
+
+.upcoming-event {
+  grid-area: upcoming-event;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 
+  "event-date event-summary event-summary";
+}
+
+.event-date {
+  grid-area: event-date;
+  padding: 1em 0 ;
+}
+
+.event-date a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.event-date:hover {
+  filter: alpha(opacity=8);
+  opacity: 0.8;
+}
+
+.event-date__day {
+  background-color: var(--grey);
+  display: block;
+  padding: 14px 0;
+  min-width: 120px;
+  max-width: 160px;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.event-date__month {
+  background-color: var(--darkBlue);
+  display: block;
+  padding: 14px 0;
+  min-width: 120px;
+  max-width: 160px;
+  line-height: 1;
+  text-align: center;
+  margin: 0;
+}
+
+.event-summary {
+  grid-area: event-summary;
+  padding: 1em .5em 1em 1em;
+}
+
+.event-summary__title {
+  
 }
 
 /* -------  NAVIGATION  ------- */
