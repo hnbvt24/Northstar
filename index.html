@@ -6,11 +6,51 @@
         <link href="css/dist/hamburgers.css" rel="stylesheet">
         <link href="css/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <title>Northstar - Home</title>
     </head>
     <body>
+    	<script>
+    		//hover over images
+  function hover(element,a) {
+  	switch (a) {
+  		case 1:
+  			element.setAttribute('src', 'images/facebook-logo-orange.png');
+  			break;
+  		case 2:
+  			element.setAttribute('src', 'images/instagram-logo-orange.png');
+  			break;
+  		case 3:
+  			element.setAttribute('src', 'images/twitter-logo-orange.png');
+  			break;
+  		case 4:
+  			element.setAttribute('src', 'images/up-arrow-orange.png');
+  		default:
+  			break;
+  	}
+	}
+
+  function unhover(element,a) {
+	switch (a) {
+  		case 1:
+  			element.setAttribute('src', 'images/facebook-logo.png');
+  			break;
+  		case 2:
+  			element.setAttribute('src', 'images/instagram-logo.png');
+  			break;
+  		case 3:
+  			element.setAttribute('src', 'images/twitter-logo.png');
+  			break;
+  		case 4:
+  			element.setAttribute('src', 'images/up-arrow.png');
+  		default:
+  			break;
+  	}
+  	}
+    	</script>
+
     	<div class="container">
-	        <div class="header-container">
+	        <div class="header-container overlay">
 	        	<header class="header">
 					<div class="logo">
 						<a href="index.html">NORTHSTAR CHURCH</a>
@@ -51,51 +91,134 @@
 	        		<div class="upcoming-header">
 	        			<h2 class="italic-header">upcoming <span>events</span></h2>
 	        		</div>
-	        		<div class="upcoming-event">
-		        		<div class="event-date">
-		        			<a href="#">
+	        		<div class="list-of-events">
+		        		<div class="upcoming-event event1">
+			        		<div class="event-date">
 		        				<span class="event-date__day">7</span>
 		        				<span class="event-date__month">APR</span>
-		        			</a>
-		        		</div>
-		        		<div class="event-summary">
-		        			<h4 class="event-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
-		        			<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
-		        		</div>
-					</div>
-					<div class="upcoming-event">
-		        		<div class="event-date">
-		        			<a href="#">
+			        		</div>
+			        		<div class="event-summary">
+			        			<h4 class="event-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
+			        			<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
+			        		</div>
+						</div>
+						<div class="upcoming-event event2">
+			        		<div class="event-date">
 		        				<span class="event-date__day">7</span>
 		        				<span class="event-date__month">APR</span>
-		        			</a>
-		        		</div>
-		        		<div class="event-summary">
-		        			<h4 class="event-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
-		        			<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
-		        		</div>
+			        		</div>
+			        		<div class="event-summary">
+			        			<h4 class="event-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
+			        			<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
+			        		</div>
+			        	</div>
+			        	<div class="upcoming-event event3">
+			        		<div class="event-date">
+		        				<span class="event-date__day">7</span>
+		        				<span class="event-date__month">APR</span>
+			        		</div>
+			        		<div class="event-summary">
+			        			<h4 class="event-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
+			        			<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
+			        		</div>
+			        	</div>
+			        </div>
+		        	<div class="more-events-btn">
+		        		<button class="btn btn-6 btn-6b events-btn">View More Events</button>
 		        	</div>
 	        	</section>
 	        	<section class="latest-announcements">
-	        		<div class="upcoming-header">
+	        		<div class="upcoming-header latest-announcements-header">
 	        			<h2 class="italic-header">latest <span>announcements</span></h2>
+	        		</div>
+	        		<div class="latest-announcement">
+	        			<h4 class="announcement-summary__title"><a href="#">Bacon ipsum dolor amet salami</a></h4>
+		        		<p>Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha leberkas.</p>
 	        		</div>
 	        	</section>
 	        	<section class="latest-blog">
-
+	        		<div class="blog-post">
+	        			<h4 class="blog-summary__title"><a href="#">Blog Post Title</a></h4>
+	        			<p class="time">1 hour</p>
+		        		<p class="blog-sum">Bacon ipsum dolor amet salami rump strip steak pork loin cow chicken, kevin bresaola picanha pork loin cow chicken leberkas.</p>
+		        		<img class="blog-img" src="images/blog-1.jpg" alt="Blog post image">
+		        		<a class="share" href="#">Share</a>
+	        		</div>
 	        	</section>
 	        </div>
+	        <div class="app-promo-container">
+	        	<div class="app-promo">
+		        	<div class="app-promo__image">
+		        		<img src="images/WhitePhone-Large.png" alt="Device image with Northstar app"/>
+		        	</div>
+		        	<div class="app-promo__summary">
+		        		<h3>Get the Northstar App</h3>
+		        		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut ero labore et dolore magna aliqua.</p>
+		        		<div class="download-links">
+			        		<a href='https://play.google.com/store/apps/details?id=io.pushpay.northstarchurch&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt="Get it on Google Play" src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png'/></a>
+			        		<a href="https://itunes.apple.com/us/app/northstar-blacksburg/id1455855760?mt=8" style="display:inline-block;overflow:hidden;background:url(https://linkmaker.itunes.apple.com/en-us/badge-lrg.svg?releaseDate=2019-03-22&kind=iossoftware&bubble=apple_music) no-repeat;width:135px;height:40px;"></a>
+			        	</div>
+		        	</div>
+		        </div>
+	        </div>
+	        <div class="footer-container">
+		        <footer class="footer">
+		        	<div class="footer-logo">
+		        		<a href="index.html">NORTHSTAR CHURCH</a>
+		        	</div>
+		        	<nav class="footer-nav">
+		        		<ul class="nav-columns">
+							<li><a href="index.html">VISIT</a></li>
+							<li><a href="about-us.html">ABOUT US</a></li>
+							<li><a href="ministries.html">MINISTRIES</a></li>
+							<li><a href="connect.html">CONNECT</a></li>
+							<li><a href="resources.html">RESOURCES</a></li>
+							<li><a href="give.html">MY NORTHSTAR</a></li>
+							<li><a href="get-the-app.html">GET THE APP</a></li>
+							<li><a href="give.html">BLOG</a></li>
+							<li><a href="get-the-app.html">EVENTS</a></li>
+							<li><a href="give.html">MEMBERSHIP</a></li>
+							<li><a href="get-the-app.html">SMALL GROUPS</a></li>
+						</ul>
+		        	</nav>
+		        	<div class="return-to-top">
+		        		<a id="back-to-top" href="#"><img src="images/up-arrow.png" onmouseover="hover(this,4);" onmouseout="unhover(this,4);"  alt="Return to top arrow"/></a>
+		        	</div>
+		        </footer>
+		        <div class="bottom-bar-container">
+			        <div class="bottom-bar">
+		        		<div class="copyright">
+		        			&copy;Northstar Church 2019
+		        		</div>
+		        		<div class="social-media">
+		        			<div class="social-links">
+								<a href="#"><img src="images/facebook-logo.png" onmouseover="hover(this,1);" onmouseout="unhover(this,1);" alt="Northstar Church Facebook Link"></a>
+								<a href="#"><img src="images/instagram-logo.png" onmouseover="hover(this,2);" onmouseout="unhover(this,2);" alt="Northstar Church Instagram Link"></a>
+								<a href="#"><img src="images/twitter-logo.png" onmouseover="hover(this,3);" onmouseout="unhover(this,3);" alt="Northstar Church Twitter Link"></a>
+							</div>
+		        		</div>
+		        	</div>
+		        </div>
+	    	</div>
     	</div>
     </body>
 <script type="text/javascript">
   // Look for .hamburger
   var hamburger = document.querySelector(".hamburger");
   var mainNav = document.querySelector(".main-nav");
+  var body = document.querySelector("body");
   // On click
   hamburger.addEventListener("click", function() {
   // Toggle class "is-active"
   hamburger.classList.toggle("is-active");
   mainNav.classList.toggle("is-open");
+  body.classList.toggle("noscroll");
+
+  $("#back-to-top").click(function(e){       
+    e.preventDefault();
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
+	});
+
   });
 </script>
 </html>
