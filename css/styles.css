@@ -1071,6 +1071,10 @@ span {
     "news"
     "blog";
   }
+  
+  .upcoming-events {
+    padding: 0;
+  }
 
   .serviceTimes {
     display: flex;
