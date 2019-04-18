@@ -9,10 +9,10 @@ We are taking a more modern, clean, simple yet effective approach to designing t
 Here are some images of the webpage mockups:
 
 # Homepage ->
-<img src="https://github.com/hnbvt24/Northstar/blob/master/images/Homepage%20-%201920x1080.png?raw=true" width="700" alt="Northstar Website Mockup - HOMEPAGE">
+<img src="https://github.com/hnbvt24/Northstar/blob/master/images/Hi-Fi%20Mockups/Homepage%20-%201920x1080.png?raw=true" width="700" alt="Northstar Website Mockup - HOMEPAGE">
 
 # Visit ->
-<img src="https://github.com/hnbvt24/Northstar/blob/master/images/ABOUT%20US%20-%20Visit.png?raw=true" width="700" alt="Northstar Website Mockup - VISIT">
+<img src="https://github.com/hnbvt24/Northstar/blob/master/images/Hi-Fi%20Mockups/ABOUT%20US%20-%20Visit.png?raw=true" width="700" alt="Northstar Website Mockup - VISIT">
 
 # Events ->
-<img src="https://github.com/hnbvt24/Northstar/blob/master/images/CONNECT%20-%20Events.png?raw=true" width="700" alt="Northstar Website Mockup - Events">
+<img src="https://github.com/hnbvt24/Northstar/blob/master/images/Hi-Fi%20Mockups/CONNECT%20-%20Events.png?raw=true" width="700" alt="Northstar Website Mockup - Events">
