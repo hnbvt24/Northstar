@@ -29,6 +29,7 @@
   			break;
   	}
 	}
+
   function unhover(element,a) {
 	switch (a) {
   		case 1:
@@ -49,34 +50,68 @@
     	</script>
 
     	<div class="container">
-	        <div class="header-container overlay">
+	        <div class="header-container visit-cover overlay">
 	        	<header class="header">
-              <div class="logo">
-                <a href="index.html">NORTHSTAR CHURCH</a>
-              </div>
-              <label class="hamburger hamburger--squeeze" aria-label="Open navigation menu" for="menu-toggle">
-                <span class="hamburger-box">
-                  <span class="hamburger-inner"></span>
-                </span>
-              </label>
-              <input type="checkbox" id="menu-toggle" />
-              <nav class="nav">
-                <ul class="main-nav" id="navigation">
-                  <li><a href="visit.html">VISIT</a></li>
-                  <li><a href="about-us.html">ABOUT US</a></li>
-                  <li><a href="ministries.html">MINISTRIES</a></li>
-                  <li><a href="connect.html">CONNECT</a></li>
-                  <li><a href="resources.html">RESOURCES</a></li>
-                  <li><a href="give.html">GIVE</a></li>
-                  <li><a href="get-the-app.html">GET THE APP</a></li>
-                </ul>
-              </nav>
-              <section class="page-header">
-                <h2>VISIT</h2>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-              </section>
-            </header>
-          </div>
+					<div class="logo">
+						<a href="index.html">NORTHSTAR CHURCH</a>
+					</div>
+					<label class="hamburger hamburger--squeeze" aria-label="Open navigation menu" for="menu-toggle">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					</label>
+					<input type="checkbox" id="menu-toggle" />
+					<nav class="nav">
+						<ul class="main-nav" id="navigation">
+							<li><a href="visit.html">VISIT</a></li>
+							<li><a href="#" aria-haspopup="true">ABOUT US</a>
+						    	<ul class="dropdown" aria-label="submenu">
+							    	<li class="link-first"><a href="mission.html">Mission</a></li>
+							        <li><a href="beliefs.html">Beliefs</a></li>
+							        <li><a href="leaders.html">Leaders</a></li>
+							        <li class="link-last"><a href="members.html">Members</a></li>
+								</ul>
+							</li>
+							<li><a href="#" aria-haspopup="true">MINISTRIES</a>
+								<ul class="dropdown" aria-label="submenu">
+							    	<li class="link-first"><a href="kids-ministry.html">Kids</a></li>
+							        <li><a href="youth-ministry.html">Youth</a></li>
+							        <li><a href="college-ministry.html">College</a></li>
+							        <li class="link-last"><a href="adult-ministries.html">Adults</a></li>
+								</ul>
+							</li>
+							<li><a href="connect.html" aria-haspopup="true">CONNECT</a>
+								<ul class="dropdown" aria-label="submenu">
+							    	<li class="link-first"><a href="events.html">Events</a></li>
+							        <li><a href="serve.html">Serve</a></li>
+							        <li><a href="small-groups.html">Small Groups</a></li>
+							        <li><a href="discipleship.html">Discipleship</a></li>
+							        <li class="link-last"><a href="missions.html">Missions</a></li>
+								</ul>
+							</li>
+							<li><a href="resources.html" aria-haspopup="true">RESOURCES</a>
+								<ul class="dropdown" aria-label="submenu">
+							    	<li class="link-first"><a href="sermons.html">Sermons</a></li>
+							        <li><a href="news.html">News</a></li>
+							        <li><a href="blog.html">Blog</a></li>
+							        <li class="link-last"><a href="#">My Northstar</a></li>
+								</ul>
+							</li>
+							<li><a href="give.html">GIVE</a></li>
+							<li><a href="get-the-app.html">GET THE APP</a></li>
+						</ul>
+					</nav>
+					<section class="header-text">
+						<h1>Visit</h1>
+						<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+					</section>
+	        	</header>
+	        </div>
+	         <div class="slogan-container">
+		        <section class="slogan">
+	        		<h2 class="sloganExcerpt">don't go to church <span>be the church</span></h2>
+	        	</section>
+	        </div>
 	        <div class="footer-container">
 		        <footer class="footer">
 		        	<div class="footer-logo">
@@ -84,18 +119,18 @@
 		        	</div>
 		        	<nav class="footer-nav">
 		        		<ul class="nav-columns">
-                  <li><a href="index.html">VISIT</a></li>
-                  <li><a href="about-us.html">ABOUT US</a></li>
-                  <li><a href="ministries.html">MINISTRIES</a></li>
-                  <li><a href="connect.html">CONNECT</a></li>
-                  <li><a href="resources.html">RESOURCES</a></li>
-                  <li><a href="give.html">MY NORTHSTAR</a></li>
-                  <li><a href="get-the-app.html">GET THE APP</a></li>
-                  <li><a href="give.html">BLOG</a></li>
-                  <li><a href="get-the-app.html">EVENTS</a></li>
-                  <li><a href="give.html">MEMBERSHIP</a></li>
-                  <li><a href="get-the-app.html">SMALL GROUPS</a></li>
-                </ul>
+							<li><a href="index.html">VISIT</a></li>
+							<li><a href="about-us.html">BELIEFS</a></li>
+							<li><a href="connect.html">LEADERS</a></li>
+							<li><a href="resources.html">MEMBERS</a></li>
+							<li><a href="give.html">EVENTS</a></li>
+							<li><a href="get-the-app.html">SMALL GROUPS</a></li>
+							<li><a href="give.html">BLOG</a></li>
+							<li><a href="give.html">NEWS</a></li>
+							<li><a href="get-the-app.html">GIVE</a></li>
+							<li><a href="give.html">MY NORTHSTAR</a></li>
+							<li><a href="get-the-app.html">GET THE APP</a></li>
+						</ul>
 		        	</nav>
 		        	<div class="return-to-top">
 		        		<a id="back-to-top" href="#"><img src="images/up-arrow.png" onmouseover="hover(this,4);" onmouseout="unhover(this,4);"  alt="Return to top arrow"/></a>
@@ -108,10 +143,10 @@
 		        		</div>
 		        		<div class="social-media">
 		        			<div class="social-links">
-                    <a href="#"><img src="images/facebook-logo.png" onmouseover="hover(this,1);" onmouseout="unhover(this,1);" alt="Northstar Church Facebook Link"></a>
-                    <a href="#"><img src="images/instagram-logo.png" onmouseover="hover(this,2);" onmouseout="unhover(this,2);" alt="Northstar Church Instagram Link"></a>
-                    <a href="#"><img src="images/twitter-logo.png" onmouseover="hover(this,3);" onmouseout="unhover(this,3);" alt="Northstar Church Twitter Link"></a>
-                  </div>
+								<a href="#"><img src="images/facebook-logo.png" onmouseover="hover(this,1);" onmouseout="unhover(this,1);" alt="Northstar Church Facebook Link"></a>
+								<a href="#"><img src="images/instagram-logo.png" onmouseover="hover(this,2);" onmouseout="unhover(this,2);" alt="Northstar Church Instagram Link"></a>
+								<a href="#"><img src="images/twitter-logo.png" onmouseover="hover(this,3);" onmouseout="unhover(this,3);" alt="Northstar Church Twitter Link"></a>
+							</div>
 		        		</div>
 		        	</div>
 		        </div>
@@ -129,10 +164,12 @@
   hamburger.classList.toggle("is-active");
   mainNav.classList.toggle("is-open");
   body.classList.toggle("noscroll");
+
   $("#back-to-top").click(function(e){       
     e.preventDefault();
     $('html,body').animate({scrollTop:$(this.hash).offset().top}, "slow");
 	});
+
   });
 </script>
 </html>
