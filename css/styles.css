@@ -259,7 +259,6 @@ span {
 .logo {
   grid-area: logo;
   font-size: 18px;
-  font-weight: 600;
 }
 
 .hamburger {
@@ -697,6 +696,7 @@ span {
 .logo a {
   color: var(--white);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .main-nav li {
