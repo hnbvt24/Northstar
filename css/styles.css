@@ -92,83 +92,83 @@ span {
 /* ------- COVER IMAGES ------- */
 
 .home-cover {
-  background-image: url("../images/visit.jpg");
+  background-image: url("/images/visit.jpg");
 }
 
 .visit-cover {
-  background-image: url("../images/visit-fam.jpg");
+  background-image: url("/images/visit-fam.jpg");
 }
 
 .mission-cover {
-  background-image: url("../images/mission.jpg");
+  background-image: url("/images/mission.jpg");
 }
 
 .beliefs-cover {
-  background-image: url("../images/beliefs.jpg");
+  background-image: url("/images/beliefs.jpg");
 }
 
 .leaders-cover {
-  background-image: url("../images/leadership.jpg");
+  background-image: url("/images/leadership.jpg");
 }
 
 .members-cover {
-  background-image: url("../images/members.jpg");
+  background-image: url("/images/members.jpg");
 }
 
 .kids-cover {
-  background-image: url("../images/kids.jpg");
+  background-image: url("/images/kids.jpg");
 }
 
 .youth-cover {
-  background-image: url("../images/youth.jpg");
+  background-image: url("/images/youth.jpg");
 }
 
 .college-cover {
-  background-image: url("../images/college.jpg");
+  background-image: url("/images/college.jpg");
 }
 
 .adults-cover {
-  background-image: url("../images/adults.jpg");
+  background-image: url("/images/adults.jpg");
 }
 
 .events-cover {
-  background-image: url("../images/events.jpg");
+  background-image: url("/images/events.jpg");
 }
 
 .serve-cover {
-  background-image: url("../images/serve.jpg");
+  background-image: url("/images/serve.jpg");
 }
 
 .smallGroups-cover {
-  background-image: url("../images/small-group.jpg");
+  background-image: url("/images/small-group.jpg");
 }
 
 .discipleship-cover {
-  background-image: url("../images/discipleship.jpg");
+  background-image: url("/images/discipleship.jpg");
 }
 
 .missions-cover {
-  background-image: url("../images/mission.jpg");
+  background-image: url("/images/mission.jpg");
 }
 
 .sermons-cover {
-  background-image: url("../images/sermons.jpg");
+  background-image: url("/images/sermons.jpg");
 }
 
 .news-cover {
-  background-image: url("../images/news.jpg");
+  background-image: url("/images/news.jpg");
 }
 
 .blog-cover {
-  background-image: url("../images/blog.jpg");
+  background-image: url("/images/blog.jpg");
 }
 
 .give-cover {
-  background-image: url("../images/give.jpg");
+  background-image: url("/images/give.jpg");
 }
 
 .getTheApp-cover {
-  background-image: url("../images/get-the-app.jpg");
+  background-image: url("/images/get-the-app.jpg");
 }
 
 /* -------  CONTAINERS  ------- */
