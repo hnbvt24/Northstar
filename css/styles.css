@@ -327,7 +327,7 @@ span {
 }
 
 .slogan span {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -539,7 +539,7 @@ span {
 
 .callToAction p,
 .header-text p {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
   margin: 4px 0 24px 0;
 }
@@ -879,7 +879,7 @@ span {
 
 .footer a,
 .copyright {
-  font-family: 'Open Sans', serif;
+  font-family: 'Open Sans', sans-serif;
   text-decoration: none;
 }
 
