@@ -709,6 +709,7 @@ span {
 
 .main-nav a {
   color: var(--white);
+  font-weight: 600;
   margin: 0 2px;
   text-decoration: none;
   text-transform: uppercase;
