@@ -291,7 +291,6 @@ span {
   grid-area: services;
   display: flex;
   margin: 0 2em;
-  padding-top: 5px;
   justify-content: center;
   align-content: center;
 }
