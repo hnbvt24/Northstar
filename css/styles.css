@@ -208,6 +208,7 @@ span {
   display: grid;
   min-height: 45em;
   margin: 0 5em;
+  padding: 0 50px;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 255px 1fr;
   grid-gap: 0 2em;
@@ -355,7 +356,6 @@ span {
   "upcoming-header"
   "list-of-events"
   "event-btn";
-  padding: 0 50px;
 }
 
 .latest-announcements {
@@ -1063,6 +1063,7 @@ span {
 
   .upcoming-container {
     margin: 0 5em;
+    padding: 0;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-gap: 0;
@@ -1070,10 +1071,6 @@ span {
     "events"
     "news"
     "blog";
-  }
-  
-  .upcoming-events {
-    padding: 0;
   }
 
   .serviceTimes {
@@ -1181,7 +1178,7 @@ span {
   .app-promo-container, 
   .serviceTimes,
   .upcoming-container {
-    margin: 0 2em;
+    margin: 0 1em;
   }
 
   .footer {
