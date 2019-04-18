@@ -725,7 +725,8 @@ span {
   cursor: pointer;
 }
 
-.main-nav li:hover a {
+.main-nav li:hover a,
+.main-nav li:focus-within a{
   color: var(--orange);
 }
 
@@ -764,20 +765,24 @@ span {
     width: 100%;
 }
 
-.main-nav li ul li:hover {
+.main-nav li ul li:hover,
+.main-nav li ul li:focus-within {
   background-color: var(--orange);
   border-radius: 0;
 }
 
-.main-nav li ul li:hover a {
+.main-nav li ul li:hover a,
+.main-nav li ul li:focus-within a {
   color: var(--white);
 }
 
-.main-nav li ul .link-first:hover {
+.main-nav li ul .link-first:hover,
+.main-nav li ul .link-first:focus-within {
   border-radius: 0px 5px 0 0;
 }
 
-.main-nav li ul .link-last:hover {
+.main-nav li ul .link-last:hover,
+.main-nav li ul .link-last:focus-within {
   border-radius: 0 0 5px 5px;
 }
 
