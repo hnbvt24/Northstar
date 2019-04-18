@@ -1180,7 +1180,15 @@ span {
   .upcoming-container {
     margin: 0 1em;
   }
+  
+  .callToAction {
+    text-align: center;
+  }
 
+  .callToAction p {
+    max-width: 100%;
+  }
+  
   .footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
