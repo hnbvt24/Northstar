@@ -92,7 +92,8 @@ span {
 /* ------- COVER IMAGES ------- */
 
 .home-cover {
-  background-image: url("images/visit.jpg");
+  /*background-image url(images/visit.jpg);*/
+  background-image: url("https://cdn.pixabay.com/photo/2017/08/07/02/34/people-2598902_1280.jpg");
 }
 
 .visit-cover {
