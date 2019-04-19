@@ -23,6 +23,7 @@ Use it to make something cool, have fun, and share what you've learned with othe
   --darkGrey:#202020;
   --navy:#082539;
   --white:#FBFBFB;
+  --logo:#1D4455;
 }
 
 html {
@@ -204,9 +205,6 @@ span {
 }
 
 .slogan-container {
-  background-color: var(--darkBlue);
-  color: var(--white);
-  display: grid;
   min-height: 15vh;
   grid-template-columns: 1fr;
   grid-template-areas: 
@@ -237,7 +235,15 @@ span {
   "content";
 }
 
-.contact-container {
+.leader-container {
+   grid-template-columns: 1fr;
+}
+
+.leadership-board-container {
+  grid-template-columns: 1fr;
+}
+
+.blue-container {
   background-color: var(--darkBlue);
   color: var(--white);
   display: grid;
@@ -545,12 +551,23 @@ span {
   "location service";
 }
 
+.music {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .main-header {
   grid-area: top-h;
 }
 
 .main-content {
   grid-area: content;
+}
+
+.main-team {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 2em;
 }
 
 .location {
@@ -726,25 +743,6 @@ span {
   width: 100%;
 }
 
-/* -------  APP PROMOTION  ------- */
-
-.app-promo {
-  display: grid;
-  grid-template-columns: 3fr 4fr;
-  grid-gap: 4em;
-  justify-content: center;
-  grid-template-areas: 
-  "promo-img promo-sum";
-}
-
-.app-promo__image img {
-  width: 200px;
-}
-
-.download-links img {
-  width: 135px;
-}
-
 /* -------  NAVIGATION  ------- */
 
 .main-nav {
@@ -870,7 +868,7 @@ span {
     display: flex;
 }
 
-/* ------- Bottom Header ------- */
+/* ------- Buttons ------- */
 
 /* button style from https://codepen.io/archivum/pen/NPPOaj */
 .btn-6 {
@@ -953,7 +951,7 @@ span {
 
 /* ------- Location & Main content ------- */
 
-.location img {
+.content-img img {
   min-width: 400px;
   max-width: 100%;
   height: auto;
@@ -975,6 +973,186 @@ span {
 .directions-btn {
   min-width: 18em;
   align-self: bottom;
+}
+
+.visit-ministry-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.visit-ministry-content__classes ul li {
+  list-style: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.main-classes {
+  text-align: center;
+}
+
+.mission-bottom-slogan {
+  margin-top: 4em;
+}
+
+.affiliation-images {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2em;
+}
+
+.affiliation-images img {
+  background-color: var(--white);
+  width: 100%;
+  object-fit: contain;
+  object-position: 0 50%;
+}
+
+.affiliation-images .white-logo {
+  background-color: var(--logo);
+}
+
+.register {
+  margin: 5em 10em;
+}
+.register button {
+  padding: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register a,
+.group-links a {
+  text-decoration: none;
+}
+
+.group-links {
+  margin: 2em 0;
+  width: 20em;
+}
+
+.main-groups {
+  display:grid;
+  grid-template-columns: 1fr;
+}
+
+.group-text {
+  grid-area: group-text;
+}
+
+.group-links {
+  grid-area: group-links;
+}
+
+.group-image {
+  grid-area: group-image;
+}
+
+.group-content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-areas:
+  "group-text group-image"
+  "group-links group-image";
+  width: 100%;
+}
+
+.group-image img {
+  width: 25em;
+  height: 15em;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+
+.ministry__image img {
+  min-width: 20em;
+  height: 15em;
+  padding: 12px 0;
+  object-fit: cover;
+  object-position: 0 50%;
+}
+
+.ministry__social-media {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  margin: 5em auto 0 auto;
+  text-align:center;
+  width: 20em;
+}
+
+.ministry__social-media img {
+  width: 4em;
+}
+
+/* ------- LEADERS ------- */
+
+.leaders {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 4em;
+  margin-top: 5em;
+  text-align: center;
+}
+
+.leadership-board {
+  margin: 5em 6em 0 6em;
+  text-align: center;
+}
+
+.leader h4,
+.leadership-board h4 {
+  margin: 1.67em 0;
+  padding: 0;
+}
+
+.leader h5,
+.leadership-board h5 {
+  font-weight: 400;
+}
+
+.leader img {
+  max-width: 15em;
+  max-height: 15em;
+  object-fit: cover;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+  -moz-box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+  box-shadow: 0px 8px 20px 0px rgba(214,214,214,1);
+}
+
+.leadership-board img {
+  max-width: 100%;
+  max-height: 25em;
+  object-fit: cover;
+}
+
+.leader img:hover,
+.leader img:focus-within {
+  filter: alpha(opacity=80);
+    opacity: 0.8;
+}
+
+/* -------  APP PROMOTION  ------- */
+
+.app-promo {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+  grid-gap: 4em;
+  justify-content: center;
+  grid-template-areas: 
+  "promo-img promo-sum";
+}
+
+.app-promo__image img {
+  width: 200px;
+}
+
+.download-links img {
+  width: 135px;
 }
 
 
