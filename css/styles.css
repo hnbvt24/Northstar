@@ -73,6 +73,14 @@ img {
   height: 100%;
 }
 
+p {
+  font-size: 16px;
+}
+
+.main-header p {
+  text-align: left;
+}
+
 .header-text p {
   max-width: none;
 }
@@ -93,7 +101,7 @@ span {
 
 .home-cover {
   /*background-image url(images/visit.jpg);*/
-  background-image: url("https://cdn.pixabay.com/photo/2017/08/07/02/34/people-2598902_1280.jpg");
+  background-image: url("https://e6b7aef6fc82f8337c44-d1a4922a739fdd3df6e9b71f81d19ca9.ssl.cf2.rackcdn.com/uploaded/h/0e7448342_1528922850_headergraphicsweb.jpg");
 }
 
 .visit-cover {
@@ -218,6 +226,23 @@ span {
   "events blog";
 }
 
+.main-container {
+  display: grid;
+  min-height: 25em;
+  margin: 5em;
+  padding: 0 50px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "top-h"
+  "content";
+}
+
+.contact-container {
+  background-color: var(--darkBlue);
+  color: var(--white);
+  display: grid;
+}
+
 .app-promo-container {
   display: grid;
   min-height: 40em;
@@ -305,13 +330,13 @@ span {
   grid-area: excerpt;
   font-size: 1.5em;
   font-weight: 400;
+  padding: 0 0 20px 0;
 }
 
 .slogan {
   grid-area: slogan;
   display: flex;
   flex-direction: column;
-
   margin: 0 2em;
   justify-content: center;
   align-content: center;
@@ -338,7 +363,6 @@ span {
   display:flex;
   align-self: center;
 }
-
 
 .btn-6b-inverse {
   grid-area: btnB;
@@ -384,10 +408,6 @@ span {
   padding-top: 50px;
 }
 
-.upcoming-header span {
-  text-transform: uppercase;
-}
-
 .list-of-events {
   grid-area: list-of-events;
   display: grid;
@@ -430,12 +450,6 @@ span {
   "blog-sum blog-sum"
   "blog-img blog-img"
   "share share";
-}
-
-.blog-summary__title,
-.time {
-  display: grid;
-  align-content: baseline;
 }
 
 .blog-summary__title {
@@ -521,6 +535,34 @@ span {
   grid-area: social;
 }
 
+.contact {
+  display: grid;
+  margin: 3em 5em;
+  grid-gap: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "top-h top-h"
+  "location service";
+}
+
+.main-header {
+  grid-area: top-h;
+}
+
+.main-content {
+  grid-area: content;
+}
+
+.location {
+  grid-area: location;
+  text-align: center;
+}
+
+.service {
+  grid-area: service;
+  text-align: center;
+}
+
 /* ------- CALL TO ACTION ------- */
 
 .callToAction h2 {
@@ -539,6 +581,7 @@ span {
 .callToAction p,
 .header-text p {
   font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
   line-height: 1.5;
   margin: 4px 0 24px 0;
 }
@@ -572,6 +615,22 @@ span {
   padding: 0 12px;
   align-self: baseline;
   font-family: 'Open Sans', sans-serif;
+}
+
+.upcoming-header span,
+.main-header span {
+  text-transform: uppercase;
+}
+
+.main-header {
+  text-align: center;
+  padding: 0;
+}
+
+.blog-summary__title,
+.time {
+  display: grid;
+  align-content: baseline;
 }
 
 .upcoming-event {
@@ -892,6 +951,33 @@ span {
   color: var(--white);
 }
 
+/* ------- Location & Main content ------- */
+
+.location img {
+  min-width: 400px;
+  max-width: 100%;
+  height: auto;
+  padding: 12px 12px 0 12px;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.serviceTime {
+  align-self: center;
+  font-size: 3em;
+  width: 200px;
+}
+
+.directions-btn {
+  min-width: 18em;
+  align-self: bottom;
+}
+
+
 /* ------- Footer ------- */
 
 .footer a,
@@ -1112,10 +1198,6 @@ span {
     align-self: center;
     margin: 0;
     text-decoration: none;
-  }
-
-  .serviceExcerpt {
-    padding: 0 0 20px 0;
   }
 
   .serviceExcerpt> * {
