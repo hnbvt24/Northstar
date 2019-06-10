@@ -150,6 +150,10 @@ span {
   background-image: url("../images/events.jpg");
 }
 
+.event-cover {
+  background-image: url("../images/event-1.jpg");
+}
+
 .serve-cover {
   background-image: url("../images/serve.jpg");
 }
@@ -195,7 +199,7 @@ span {
   grid-template-columns: 1fr;
   grid-template-areas: 
   "header";
-  height: calc(100vh - 15vh);
+  height: calc(100vh - 20vh);
   align-items: flex-start;
 }
 
@@ -208,6 +212,9 @@ span {
   grid-template-columns: 1fr;
   grid-template-areas: 
   "services";
+  -webkit-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  -moz-box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
+  box-shadow: 0px 4px 10px 0px rgba(163,163,163,.9);
 }
 
 .slogan-container {
@@ -245,6 +252,13 @@ span {
 .news-container {
   display: grid;
   min-height: 45em;
+  margin: 0 5em;
+  padding: 0 50px;
+}
+
+.event-container {
+  display: grid;
+  min-height: 38em;
   margin: 0 5em;
   padding: 0 50px;
 }
@@ -307,6 +321,14 @@ span {
   grid-template-columns: 1fr;
   grid-template-areas: 
   "b-bar";
+}
+
+.selectedEvent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "m-e-details m-e-links";
+  min-height: 32em;
 }
 
 /* -------  GRID AREAS  ------- */
@@ -680,6 +702,20 @@ span {
   align-items: flex-start;
 }
 
+.main-event-details {
+  grid-area: m-e-details;
+}
+
+.main-event-social {
+  display: grid;
+  grid-area: m-e-links;
+  grid-template-columns: 1fr;
+}
+
+.main-event-nav {
+  grid-area: m-e-nav;
+}
+
 /* ------- CALL TO ACTION ------- */
 
 .callToAction h2 {
@@ -787,9 +823,38 @@ span {
   padding: 15px 0 5px 0;
 }
 
+.main-prev-events-btn {
+  display: grid;
+  padding-top: 50px;
+}
+
+.event-time {
+  font-size: 18px;
+}
+
 .prev-events-btn,
 .prev-news-btn {
-  padding-top: 50px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 1fr 1fr;
+}
+
+.prev-events-btn__small {
+  display: none;
+}
+
+.prev-events-btn a button,
+.prev-news-btn a button {
+  min-width: 200px;
+  max-width: 300px;
+}
+
+.prevBtn {
+  text-align: left;
+}
+
+.nextBtn {
+  text-align: right;
 }
 
 .event-summary h3 {
@@ -979,6 +1044,22 @@ span {
 
 .blog-post img {
   width: 100%;
+}
+
+.event-social-links {
+  padding-top: 50px;
+  text-align: right;
+}
+
+.event-social-links a {
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.event-social-links a img {
+  margin: 0 auto;
+  max-height: 5em;
+  padding: 15px;
 }
 
 /* -------  NAVIGATION  ------- */
@@ -1643,6 +1724,15 @@ span {
     display: block;
   }
 
+  .leaders {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 5em 3em 0 3em;
+  }
+
+  .events-container {
+    margin: 0;
+  }
+
 }
 
 @media(max-width: 905px){
@@ -1760,9 +1850,147 @@ span {
     grid-template-columns: 2fr 1fr;
   }
   
+  .main-container {
+    margin: 5em 0;
+  }
+
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top-h"
+    "service"
+    "location";
+  }
+
+  .visit-ministry-content {
+    grid-template-columns: 1fr;
+  }
+
+  .visit-ministry-content__classes {
+    text-align:center;
+  }
+
+  .classes {
+    padding: 0;
+  }
+
+  .vision-container {
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "top-h"
+    "vision"
+    "location";
+  }
+
+  .affiliation-images {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2em;
+  }
+
+  .event {
+    grid-template-columns: 1fr;
+  }
+
+  .event-date__day,
+  .event-date__month {
+    max-width: none;
+    font-size: 2em;
+  }
+
+  .selectedEvent {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "m-e-details" 
+    "m-e-links";
+    min-height: 32em;
+  }
+
+  .event-social-links {
+    text-align: center;
+    padding: 25px 0;
+  }
+
+  .time-and-place {
+    text-align: center;
+  }
+
+  .time-and-place > h4 {
+    font-size: 2em;
+  }
+
+  .time-and-place > address {
+    font-size: 1.5em;
+  }
+
+  .group-content {   
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "group-text"
+    "group-image"
+    "group-links";
+  }
+
+  .group-image img {
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 10%;
+  }
+
+  .group-links {
+    width: 100%;
+  }
+
+  .main-team {
+    grid-template-columns: 1fr;
+  }
+
+  .ministry__image img {
+    width: 100%;
+  }
+
+  .register {
+    margin: 5em 0;
+  }
+
+  .register button {
+    min-width: 250px;
+  }
+
+  .news-container {
+    margin: 0;
+  }
+
+  .news-article {
+    grid-template-columns: 1fr;
+  }
+
+  .news-read-more {
+    justify-content: initial;
+  }
+
+  .sermons-container {
+    padding: 0;
+  }
+
+  .sermon {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 85px;
+    margin: 0;
+  }
+
+
 }
 
 @media(max-width: 629px) {
+
+  h1 {
+    font-size: 48px;
+    margin: 0;
+  }
 
   .header,
   .app-promo-container, 
@@ -1770,15 +1998,79 @@ span {
   .upcoming-container {
     margin: 0 1em;
   }
+
+  .btn-6b-inverse {
+    margin-top: 2em;
+  }
   
   .callToAction {
     text-align: center;
   }
 
+  .callToAction h2,
+  .callToAction span {
+    font-size: 3em;
+  }
+
   .callToAction p {
     max-width: 100%;
+    margin: 1em 2.5em 2em 2.5em;
   }
-  
+
+  .event-summary {
+    align-items: center;
+  }
+
+  .event-summary__title,
+  .news-summary__title,
+  .blog-summary__title {
+    font-size: 1.85em;
+  }
+
+  .event-summary > p,
+  .news-summary > p,
+  .blog-summary > p {
+    display: none;
+  }
+  .news-summary > h5,
+  .news-summary > h6,
+  .blog-summary > h5,
+  .blog-summary > h6 {
+    font-size: 1em;
+  }
+
+  .more-events-btn {
+    padding-top: 12px;
+  }
+
+  .more-events-btn button {
+    font-size: 1.25em;
+  }
+
+  .event-container {
+    padding: 0;
+    margin: 2em;
+  }
+
+  .prev-events-btn {
+    display: none;
+  }
+
+  .prev-events-btn__small {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+
+  .prev-events-btn__small img {
+    width: 4em;
+  }
+    
+  .prev-events-btn__small a {
+    padding: 0 2em;
+    height: 100%;
+  }
+
   .footer {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 
@@ -1789,10 +2081,10 @@ span {
 
   .footer-nav ul {
     grid-template-columns: 1fr;
-    grid-auto-rows: 25px;
+    grid-auto-rows: 32px;
     text-align: center;
   }
-  
+
   .footer-nav a {
     font-size: 16px;
   }
@@ -1817,6 +2109,50 @@ span {
 
   .copyright {
     text-align: center;
+  }
+
+  .building-campaign-container {
+    display: none;
+  }
+
+  .affiliation-images {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+  }
+
+  .leaders {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5em 1em 0 1em;
+  }
+
+  .leadership-board {
+    margin: 5em 1em 0 1em;
+    text-align: center;
+  }
+
+  .leader h5, 
+  .leadership-board h5 {
+    font-size: 1em;
+  }
+
+  .register {
+    margin: 5em 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .register button {
+    min-width: 240px;
+    word-wrap: break-word;
+  }
+
+  .leader-page .main-container {
+    grid-template-rows: auto;
+  }
+
+  .leader-page .leaders {
+    margin: 0;
   }
 
 }

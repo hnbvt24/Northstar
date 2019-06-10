@@ -7,7 +7,7 @@
         <link href="css/styles.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <title>Northstar - Leader - Jeff Noble</title>
+        <title>Northstar - Events</title>
     </head>
     <body>
     	<script>
@@ -25,6 +25,16 @@
   			break;
   		case 4:
   			element.setAttribute('src', 'images/up-arrow-orange.png');
+  			break;
+  		case 5:
+  			element.setAttribute('src', 'images/facebook-logo-blue.png');
+  			break;
+  		case 6:
+  			element.setAttribute('src', 'images/instagram-logo-blue.png');
+  			break;
+  		case 7:
+  			element.setAttribute('src', 'images/twitter-logo-blue.png');
+  			break;
   		default:
   			break;
   	}
@@ -43,14 +53,24 @@
   			break;
   		case 4:
   			element.setAttribute('src', 'images/up-arrow.png');
+  			break;
+  		case 5:
+  			element.setAttribute('src', 'images/facebook-logo-orange.png');
+  			break;
+  		case 6:
+  			element.setAttribute('src', 'images/instagram-logo-orange.png');
+  			break;
+  		case 7:
+  			element.setAttribute('src', 'images/twitter-logo-orange.png');
+  			break;
   		default:
   			break;
   	}
   	}
     	</script>
 
-    	<div class="container leader-page">
-	        <div class="header-container leaders-cover overlay">
+    	<div class="container">
+	        <div class="header-container event-cover overlay">
 	        	<header class="header">
 					<div class="logo">
 						<a href="index.html">NORTHSTAR CHURCH</a>
@@ -102,23 +122,41 @@
 							<li><a href="get-the-app.html">GET THE APP</a></li>
 						</ul>
 					</nav>
-					<section class="header-text">
-						<h1>Leader</h1>
-					</section>
 	        	</header>
 	        </div>
-	        <div class="main-container leader-container">
-	        	<div class="main-content leaders">
-	        		<div class="leader">
-	        			<img src="images/jeff.jpg" alt="Jeff Noble Image">
-	        			<h4>Jeff Noble</h4>
-	        			<h5>Lead Pastor</h5>
-	        			<p>Bacon ipsum dolor amet filet mignon corned beef cow chicken shankle doner porchetta. Pancetta kielbasa landjaeger pork belly frankfurter cow ball tip drumstick beef ribs tenderloin kevin sausage. Ball tip porchetta andouille picanha, hamburger chicken buffalo kielbasa spare ribs turkey biltong. Flank andouille biltong rump shankle. Pastrami shank buffalo prosciutto andouille, shoulder alcatra burgdoggen salami landjaeger bacon tail turkey frankfurter.
-
-Pig biltong ham hock bresaola. Short loin landjaeger shank cupim alcatra ham, pork belly pig swine meatloaf tongue andouille doner tri-tip. Swine t-bone salami pork belly meatloaf sausage. Ribeye alcatra meatball shank salami chicken. Andouille frankfurter turkey, ground round drumstick capicola corned beef kielbasa hamburger pork loin filet mignon. Bresaola ham tail alcatra leberkas, pastrami pig kielbasa. Meatball prosciutto sausage tenderloin.</p>
+	        <div class="event-container">
+	        	<section class="selectedEvent">
+	        		<div class="main-event-details">
+	        			<div class="upcoming-header">
+		        			<h2 class="italic-header">Bacon ipsum dolor amet salami</h2>
+		        		</div>
+	        			<div class="time-and-place">
+	        				
+		        			<h4 class="event-time">April 21 • 7:00 pm</h4>
+		        			<address>
+		        				1234 Main Street
+								Blacksburg, VA 24060
+							</address>
+						</div>
+	        			<p>Bacon ipsum dolor amet cupim buffalo meatball drumstick. Jerky brisket shankle pancetta cow landjaeger turkey buffalo tri-tip picanha pork loin, spare ribs cupim. Ham hock shank shoulder ground round andouille bacon biltong pork belly doner ham jerky drumstick swine chicken. Sausage bresaola beef ribs landjaeger rump cow buffalo salami beef sirloin pig chicken.</p>
 	        		</div>
+	        		<div class="main-event-social">
+	        			<div class="event-social-links">
+		        			<a href="#"><img src="images/facebook-logo-orange.png" onmouseover="hover(this,5);" onmouseout="unhover(this,5);" alt="Northstar Church Facebook Link"></a>
+							<a href="#"><img src="images/instagram-logo-orange.png" onmouseover="hover(this,6);" onmouseout="unhover(this,6);" alt="Northstar Church Instagram Link"></a>
+							<a href="#"><img src="images/twitter-logo-orange.png" onmouseover="hover(this,7);" onmouseout="unhover(this,7);" alt="Northstar Church Twitter Link"></a>
+						</div>
+	        		</div>
+				</section>
+				<div class="prev-events-btn">
+	        		<a href="events.html" class="prevBtn"><button class="btn btn-6 btn-6a events-btn">Previous Event</button></a>
+	        		<a href="events.html" class="nextBtn"><button class="btn btn-6 btn-6a events-btn">Next Event</button></a>
 	        	</div>
-	        </div>
+	        	<div class="prev-events-btn__small">
+	        		<a href="events.html" class="prevBtn"><img src="images/keyboard-prev-arrow-button.png" alt="Previous Events Arrow"></a>
+	        		<a href="events.html" class="nextBtn"><img src="images/keyboard-next-arrow-button.png" alt="Previous Events Arrow"></a>
+	        	</div>
+			</div>
 	        <div class="footer-container">
 		        <footer class="footer">
 		        	<div class="footer-logo">
