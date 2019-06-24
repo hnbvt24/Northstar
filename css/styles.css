@@ -1643,11 +1643,16 @@ span {
   text-align: right;
   float: right;
   display: grid;
+  padding: 0 12px 0 0 ;
 }
 
 .response h3 {
   min-width: 60px;
   max-width: 125px;
+}
+
+.comments {
+  padding: 12px 0 0 0 ;
 }
 
 .comments button {
@@ -1665,6 +1670,15 @@ span {
    margin: 8px 0;
    overflow: auto;
    box-shadow: inset 2px 2px 4px 0 var(--lightGrey);
+}
+
+.returnHome {
+  padding: 24px 0 32px 0;
+}
+
+.returnHome a {
+  color: var(--darkBlue);
+  font-size: 1.2em;
 }
 
 /* ------- Media Queries ------- */
