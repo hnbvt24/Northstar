@@ -306,12 +306,17 @@ span {
 
 .vision-container {
   display: grid;
-  margin: 3em 5em;
   grid-gap: 2em;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: 
   "top-h top-h"
   "vision location";
+}
+
+.main-header,
+.vision,
+.location-content {
+  margin: 3em 3.5em;
 }
 
 .app-promo-container {
@@ -1287,7 +1292,6 @@ span {
 /* ------- Location & Main content ------- */
 
 .content-img img {
-  min-width: 400px;
   max-width: 100%;
   height: auto;
   padding: 12px 12px 0 12px;
@@ -1302,8 +1306,7 @@ span {
 
 .overlay-image {
  position: relative;
-
- margin: 12px;
+ margin-top: 12px;
  width: 100%;
 }
 
@@ -1942,6 +1945,11 @@ span {
     "top-h"
     "service"
     "location";
+    margin: 0;
+  }
+
+  .content-img img {
+    padding: 12px 0 0 0;
   }
 
   .visit-ministry-content {
